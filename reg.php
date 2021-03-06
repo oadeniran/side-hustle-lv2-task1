@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Register your account with us</title>
+	</head>
+	
+	<body>
+		<form action='reg.php' method = "post" > 
+			<h1>REGISTER YOUR ACCOUNT WITH US</h1><br>
+			<input type='text' name='FIRST' required placeholder='First Name'>*<br><br>
+			<input type='text' name= 'MIDDDLE' placeholder='Middle Name'><br><br>
+			<input type='text' name='LAST' required placeholder='Last Name'>*<br><br>
+			D.O.B: 	<input type = 'date' name='dob' required placeholder='DD/MM/YY'>*<br><br>
+			<input type='email' name='mail' required placeholder="Email Adress">*<br><br>
+			<input type='text' name='username' required placeholder='User name'>*<br><br>
+			<input type='password' name = 'password' required placeholder = 'Password'>*<br><br>
+			<input type='password' name = 'conf_password' required placeholder = 'Confirm Password'>*<br><br>
+			<input type= 'submit' align = 'center'><br>
+		</form>
+		<p>Have an account? <a href= login.html>Login</a></p>
+	</body>
+</html>
