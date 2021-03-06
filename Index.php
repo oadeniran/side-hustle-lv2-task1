@@ -39,7 +39,7 @@
 			}
 		}
 		else{
-			include (home.html)
+			include ('home.html');
                         echo 'No user found with Username';
 			echo '<html><p><a href= "login.html">LOGIN</a></p> <p><a href="reg.html">REGISTER</a></p> </html>';
 		}
