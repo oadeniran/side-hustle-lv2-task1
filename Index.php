@@ -13,7 +13,7 @@
 			$cookie_2 = "PASSWORD";
 			setcookie($cookie_name,$_POST['username'],time() + 2400 *2);
 			setcookie($cookie_2,$_POST['password'], time() + 2400 *2);
-			include 'login.html';
+			include 'index.html';
 		}
 		else
 		{
@@ -25,7 +25,7 @@
 		if (!isset($_COOKIE['USERNAME']))
 		{
 			echo 'No Recent user found with Username in this session';
-			echo '<html><p><a href= "login.html">LOGIN</a></p> <p><a href="reg.html">REGISTER</a></p> </html>';
+			echo '<html><p><a href= "index.html">LOGIN</a></p> <p><a href="reg.html">REGISTER</a></p> </html>';
 		}
 		if ($_POST['username'] == $_COOKIE['USERNAME'])
 		{
@@ -41,7 +41,7 @@
 		else{
 			include ('home.html');
                         echo 'No user found with Username';
-			echo '<html><p><a href= "login.html">LOGIN</a></p> <p><a href="reg.html">REGISTER</a></p> </html>';
+			echo '<html><p><a href= "index.html">LOGIN</a></p> <p><a href="reg.html">REGISTER</a></p> </html>';
 		}
 	}
 ?>
