@@ -27,7 +27,7 @@
 			echo 'No Recent user found with Username in this session';
 			echo '<html><p><a href= "index.html">LOGIN</a></p> <p><a href="reg.html">REGISTER</a></p> </html>';
 		}
-		if ($_POST['username'] == $_COOKIE['USERNAME'])
+		elseif ($_POST['username'] == $_COOKIE['USERNAME'])
 		{
 			if ($_POST['password'] == $_COOKIE['PASSWORD'])
 			{
