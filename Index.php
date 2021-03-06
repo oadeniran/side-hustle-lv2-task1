@@ -35,11 +35,11 @@
 			}
 			else{
 				echo 'password is Incorrect';
-				echo '<html><p><a href= "login.html">BACK</a></p> </html>';
+				echo '<html><p><a href= "index.html">BACK</a></p> </html>';
 			}
 		}
 		else{
-			include ('home.html');
+			include ('index.html');
                         echo 'No user found with Username';
 			echo '<html><p><a href= "index.html">LOGIN</a></p> <p><a href="reg.html">REGISTER</a></p> </html>';
 		}
